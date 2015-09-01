@@ -14,17 +14,19 @@ SETUP
 TECH STACK
 ==========
 
-- Symfony2
-- jQuery, jQuery-UI
-- mySQL
-- FOSUserBundle (not yet fully implemented)
+- Symfony2 v2.7.3
+- jQuery v1.11.3
+- jQuery-UI v1.11.4
+- mySQL v5.6.25
+- PHP v5.6.11
+- FOSUserBundle v1.3.x (not yet fully implemented)
 
 DEVELOPED UNDER
 ===============
 
-- NetBeans 8.0.2
-- mySQL Workbench 6.3.4.0
-- XAMPP 5.6.11
+- NetBeans v8.0.2
+- mySQL Workbench v6.3.4.0
+- XAMPP v5.6.11
 
 KNOWN ISSUES
 ============
