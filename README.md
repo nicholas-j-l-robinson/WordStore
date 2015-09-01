@@ -1,69 +1,44 @@
-Symfony Standard Edition
-========================
+WordStore v0.1
+==============
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new applications.
+A quick and simple little app designed to let the user browse a prebuilt dictionary database either by which letter a word starts on, or by putting in their own search text.
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+This was built using the Symfony2 framework over the course of roughly 24 working hours, and is my first from-scratch Symfony2 project.
 
-What's inside?
---------------
+SETUP
+=====
+- Standard Symfony2 project setup; configure as per usual.
+- Add 'domain' variable to parameters.yml (for example, domain: /wordstore); this is a workaround for an issue I ran into with the routing and XAMPP that may not be necessary under other environments.
+- Load up setup/wordstore.sql into your database
 
-The Symfony Standard Edition is configured with the following defaults:
+TECH STACK
+==========
 
-  * An AppBundle you can use to start coding;
+- Symfony2
+- jQuery, jQuery-UI
+- mySQL
+- FOSUserBundle (not yet fully implemented)
 
-  * Twig as the only configured template engine;
+DEVELOPED UNDER
+===============
 
-  * Doctrine ORM/DBAL;
+- NetBeans 8.0.2
+- mySQL Workbench 6.3.4.0
+- XAMPP 5.6.11
 
-  * Swiftmailer;
+KNOWN ISSUES
+============
+- The alignment of the book's 'spines' is out of whack due to the :before and :after pseudotags not working happily with the usual div alignment.
+- FOSUserBundle is only partially implemented; temporarily removed the links the jQuery frontend works off of to disable this, but they can still be found in topBanner.html.twig.
+- Getting some frontend slowdown when searching for particularly popular letters; current plan to deal with this is good old pagination.
 
-  * Annotations enabled for everything.
+TODO
+====
+- Finish implementing FOSUserBundle
+- Add in faux-storefront to allow users to 'buy' words; user login/saving/loading to be done via FOSUserBundle
+- Pagination for words, possibly definitions.
 
-It comes pre-configured with the following bundles:
+ACKNOWLEDGEMENTS
+================
 
-  * **FrameworkBundle** - The core Symfony framework bundle
-
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
-
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
-
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
-
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
-
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
-
-  * [**AsseticBundle**][12] - Adds support for Assetic, an asset processing
-    library
-
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  http://symfony.com/doc/2.7/book/installation.html
-[6]:  http://symfony.com/doc/2.7/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  http://symfony.com/doc/2.7/book/doctrine.html
-[8]:  http://symfony.com/doc/2.7/book/templating.html
-[9]:  http://symfony.com/doc/2.7/book/security.html
-[10]: http://symfony.com/doc/2.7/cookbook/email.html
-[11]: http://symfony.com/doc/2.7/cookbook/logging/monolog.html
-[12]: http://symfony.com/doc/2.7/cookbook/assetic/asset_management.html
-[13]: http://symfony.com/doc/2.7/bundles/SensioGeneratorBundle/index.html
+Base word dictionary by x16bkkamz6rkb78, available from http://sourceforge.net/projects/mysqlenglishdictionary/
