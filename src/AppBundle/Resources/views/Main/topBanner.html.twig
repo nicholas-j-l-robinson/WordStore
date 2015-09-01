@@ -1,0 +1,18 @@
+<div class="topBannerContainer">
+    <div class="topBannerHomeContainer"></div>
+    <div class="topBannerLoginContainer">
+        <!--<div class="loginLink">Login</div>
+        <div class="logoutLink">Logout</div>
+        <div class="logoutLink">Register</div>-->
+        Login Coming Soon
+    </div>
+    <div class="topBannerSearchContainer">
+        <input id="searchInput" type="text" name="search-text" placeholder="Search for...">
+        <button class="searchGo"></button>
+        <br>
+        <div class="quickLetter">Quick Index:</div>
+        {% for letter in 'a'|upper..'z'|upper %}
+            <div class="quickLetter searchByLetter" data-letter="{{letter}}">{{letter}}</div>
+        {% endfor %}
+    </div>
+</div>

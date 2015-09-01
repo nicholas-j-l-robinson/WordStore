@@ -1,0 +1,17 @@
+
+main:
+    resource: "@AppBundle/Controller/MainController.php"
+    type:     annotation
+    prefix:   "%domain%"
+    
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix:   "%domain%"
+    
+#admin:
+#    resource: "@AppBundle/Controller/AdminController.php"
+#    type:     annotation
+
+#homepage_prod:
+#    path:     /
+#    defaults: { _controller: AppBundle:Main:homepage }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome to the Word Store!{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets filter='cssrewrite'
+                                  'bundles/app/css/*' %}
+                <link rel="stylesheet" href="{{ asset_fix }}{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
+        {% block javascript %}
+            {% javascripts '@AppBundle/Resources/public/js/jquery-1.11.3.min.js'
+                           '@AppBundle/Resources/public/js/jquery-ui.min.js'
+                           '@AppBundle/Resources/public/js/*' %}
+                <script src="{{ asset_fix }}{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <script type="text/javascript">
+            //Global parameters (should be used sparingly)
+            var js_fix = "{{ js_fix }}";
+        </script>
+    </head>
+    <body>
+        {% block body %}
+            {{ include('AppBundle:Main:topBanner.html.twig') }}
+            <div class="pageContent">
+                {{ include('AppBundle:Main:sideMenu.html.twig') }}
+                {{ include('AppBundle:Main:wordStoreDisplay.html.twig') }}
+            </div>
+        {% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript">
+                window.onload = function() {
+                   wsAdmin.setup();
+                   wsSearch.setup();
+                }
+            </script>
+        {% endblock %}        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Words
+ *
+ * @ORM\Table(name="words")
+ * @ORM\Entity
+ */
+class Words
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="word", type="string", length=25, nullable=false)
+     */
+    private $word;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="wordtype", type="string", length=20, nullable=false)
+     */
+    private $wordtype;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="definition", type="text", nullable=false)
+     */
+    private $definition;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+
+}

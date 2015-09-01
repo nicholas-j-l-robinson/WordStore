@@ -1,0 +1,10 @@
+<div class="definitionListContainer">
+{% for def in definitions %}
+    <div class="definitionContainer" data-id="{{ def.id }}">
+        {{ def.word }} {% if def.wordtype is not null and def.wordtype is not empty %}({{def.wordtype}}){% endif %}
+        <div class="line-separator"></div>
+        {{ def.definition|nl2br }}
+    </div>
+    <br/>
+{% endfor %}
+</div>

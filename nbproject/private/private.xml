@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/WordStore/app/.htaccess</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/topBanner.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/loadingMask.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/parameters.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/.htaccess</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/config_dev.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Controller/MainController.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/vendor/symfony/symfony/src/Symfony/Component/Debug/Debug.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/web/.htaccess</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/public/css/general.css</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/config.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/public/js/query.js</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/base.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/routing_dev.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Tests/Controller/MainControllerTest.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/wordResults.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Entity/UserBasketWords.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Entity/Words.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/web/app_dev.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/AppKernel.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/config_prod.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/definitionResults.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/sideMenu.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/app/config/security.yml</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/.htaccess</file>
+            <file>file:/C:/xampp/htdocs/WordStore/web/app.php</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Resources/views/Main/wordStoreDisplay.html.twig</file>
+            <file>file:/C:/xampp/htdocs/WordStore/src/AppBundle/Entity/Users.php</file>
+        </group>
+    </open-files>
+</project-private>

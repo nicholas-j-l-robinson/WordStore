@@ -1,0 +1,6 @@
+{% for word in words %}
+    <div class="wordContainer {{ random(['red','green','blue']) }}Book" data-word="{{ word.word }}">
+        {{ word.word }}
+    </div>
+    <br/>
+{% endfor %}
